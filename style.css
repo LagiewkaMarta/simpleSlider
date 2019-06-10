@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+.slider-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.slide.visible {
+    opacity: 1;
+}
+.content {
+    background-image: linear-gradient(to right top, #04275c, #004982, #006ea7, #0094cb, #12bceb);
+    position: absolute;
+    width: 400px;
+    bottom: 70px;
+    left: 0;
+    padding: 30px 40px;
+    border-radius: 120px;
+    text-align: center;
+}
+.btns button {
+    position: absolute;
+    top: 40%;
+    background-image: linear-gradient(to right top, #04275c, #004982, #006ea7, #0094cb, #12bceb);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.btns button:nth-child(1){
+    left: 15px;
+}
+.btns button:nth-child(2){
+    right: 15px;
+}
+
+.fas {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+/* Backgorund Images */
+ 
+.slide:first-child {
+    background: url('https://cdn.pixabay.com/photo/2019/06/01/03/45/alpine-lake-4243396_960_720.jpg') no-repeat
+      center top/cover;
+  }
+  .slide:nth-child(2) {
+    background: url('https://cdn.pixabay.com/photo/2016/12/11/12/02/bled-1899264_960_720.jpg') no-repeat
+      center top/cover;
+  }
+  .slide:nth-child(3) {
+    background: url('https://cdn.pixabay.com/photo/2016/11/04/13/53/bled-1797835_960_720.jpg') no-repeat
+      center top/cover;
+  }
+  .slide:nth-child(4) {
+    background: url('https://cdn.pixabay.com/photo/2016/09/19/22/46/hut-1681485_960_720.jpg') no-repeat
+      center top/cover;
+  }
+  .slide:nth-child(5) {
+    background: url('https://cdn.pixabay.com/photo/2016/08/11/23/48/italy-1587287_960_720.jpg') no-repeat
+      center top/cover;
+  } 
+  .slide:nth-child(6)  {
+    background: url('https://cdn.pixabay.com/photo/2017/11/23/10/16/cottage-2972514_960_720.jpg') no-repeat
+      center center/cover;
+  }
